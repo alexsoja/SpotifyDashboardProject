@@ -31,5 +31,5 @@ Inspired by Spotify Wrapped, this project lets users explore their top artists, 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/spotify-dashboard.git
-cd spotify-dashboard
+git clone https://github.com/alexsoja/SpotifyDashboardProject.git
+cd SpotifyDashboardProject
