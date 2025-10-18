@@ -1,76 +1,41 @@
-# app.py
-import streamlit as st
 import pandas as pd
-import os
+import streamlit as st
+import altair as alt
 
-# --- Setup ---
-st.set_page_config(page_title="Spotify Dashboard", layout="wide")
-st.title("Spotify Dashboard — MVP")
+# Load data
+tracks = pd.read_csv("data/top_tracks_all.csv")
+artists = pd.read_csv("data/top_artists_all.csv")
 
-# Determine script directory
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+st.title("🎵 Spotify Dashboard - Top 10 (Medium Term)")
 
-# Ensure data folder exists
-if not os.path.exists(DATA_DIR):
-    st.error(f"Data folder not found: {DATA_DIR}. Run spotify_fetch.py first.")
-    st.stop()
+# Filter medium term
+tracks = tracks[tracks['time_range'] == 'medium_term']
+artists = artists[artists['time_range'] == 'medium_term']
 
-# --- Sidebar ---
-time_range = st.sidebar.selectbox("Select Time Range", ["short_term", "medium_term", "long_term"])
-st.sidebar.write("Note: CSVs currently reflect one time range. Update spotify_fetch.py to fetch by time_range.")
+# Select category
+category = st.selectbox("Choose category:", ["Tracks", "Artists"])
 
-# --- Load Data ---
-def load_csv(filename):
-    path = os.path.join(DATA_DIR, filename)
-    if not os.path.exists(path):
-        st.error(f"File not found: {path}. Run spotify_fetch.py first.")
-        st.stop()
-    return pd.read_csv(path)
+if category == "Tracks":
+    df = tracks.copy()
+    label_col = "name"
+elif category == "Artists":
+    df = artists.copy()
+    label_col = "name"
 
-artists = load_csv("top_artists.csv")
-tracks = load_csv("top_tracks.csv")
+# Take top 10 by user listens
+df = df.sort_values("user_listens", ascending=False).head(10)
 
-# --- Top Artists ---
-st.header("Top Artists")
-st.dataframe(artists)
+# Calculate percentages
+df['percent_of_total'] = df['user_listens'] / df['user_listens'].sum() * 100
 
-st.subheader("Top Artists Popularity")
-st.bar_chart(artists.set_index("name")["popularity"])
+st.subheader(f"Top 10 {category} - Medium Term")
 
-# --- Genre Distribution ---
-st.subheader("Genres Distribution")
-all_genres = []
-for g in artists.get("genres", []):
-    if pd.notna(g):
-        all_genres.extend(g.split(", "))
-genre_counts = pd.Series(all_genres).value_counts()
-st.bar_chart(genre_counts)
+# Pie chart using Altair
+pie = alt.Chart(df).mark_arc().encode(
+    theta=alt.Theta(field="percent_of_total", type="quantitative"),
+    color=alt.Color(field=label_col, type="nominal"),
+    tooltip=[label_col, alt.Tooltip("user_listens", title="Plays"),
+             alt.Tooltip("percent_of_total", title="% of Total", format=".2f")]
+)
 
-# --- Genre Popularity ---
-st.subheader("Average Popularity by Genre")
-
-genre_popularity = {}
-
-for _, row in artists.iterrows():
-    if pd.notna(row.get("genres")):
-        for g in row["genres"].split(", "):
-            if g not in genre_popularity:
-                genre_popularity[g] = []
-            genre_popularity[g].append(row["popularity"])
-
-# Calculate average popularity per genre
-avg_genre_popularity = {g: sum(p)/len(p) for g, p in genre_popularity.items()}
-
-# Convert to DataFrame for Streamlit
-genre_pop_df = pd.DataFrame.from_dict(avg_genre_popularity, orient="index", columns=["avg_popularity"])
-genre_pop_df = genre_pop_df.sort_values(by="avg_popularity", ascending=False)
-
-st.bar_chart(genre_pop_df)
-
-# --- Top Tracks ---
-st.header("Top Tracks")
-st.dataframe(tracks)
-
-st.subheader("Top Tracks Popularity")
-st.bar_chart(tracks.set_index("name")["popularity"])
+st.altair_chart(pie, use_container_width=True)
