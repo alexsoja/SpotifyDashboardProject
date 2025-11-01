@@ -1,71 +1,71 @@
 name,user_listens,time_range
 Cafe Music BGM channel,50,short_term
-Radiohead,49,short_term
-Gorillaz,48,short_term
-Chris Stapleton,47,short_term
+Chris Stapleton,49,short_term
+Radiohead,48,short_term
+Gorillaz,47,short_term
 Medieval Lofi,46,short_term
 The Strokes,45,short_term
-Jazzy Coffee,44,short_term
-Tame Impala,43,short_term
-Hozier,42,short_term
-Kanye West,41,short_term
-Arctic Monkeys,40,short_term
-Joe Dassin,39,short_term
-Beach House,38,short_term
-Relaxing Jazz Piano,37,short_term
-The Growlers,36,short_term
-Cozy Bedroom,35,short_term
-Fleet Foxes,34,short_term
-Coldplay,33,short_term
-Anson Tran,32,short_term
+Tame Impala,44,short_term
+Hozier,43,short_term
+Jazzy Coffee,42,short_term
+Arctic Monkeys,41,short_term
+Joe Dassin,40,short_term
+Beach House,39,short_term
+Daniel Lanois,38,short_term
+Khalid,37,short_term
+Michael Jackson,36,short_term
+Daft Punk,35,short_term
+The Growlers,34,short_term
+Justin Timberlake,33,short_term
+Fleet Foxes,32,short_term
 Magdalena Bay,31,short_term
-Balu Brigada,30,short_term
-The Weeknd,29,short_term
-Daft Punk,28,short_term
-Gregory Alan Isakov,27,short_term
+Jeff Buckley,30,short_term
+Balu Brigada,29,short_term
+Cozy Bedroom,28,short_term
+The Weeknd,27,short_term
 Kings of Leon,26,short_term
-Men I Trust,25,short_term
-Khalid,24,short_term
-Cesária Evora,23,short_term
-Warm Blanket,22,short_term
-Interpol,21,short_term
-Peach Pit,20,short_term
-Cigarettes After Sex,19,short_term
-Phantogram,18,short_term
-Cage The Elephant,17,short_term
-The Teskey Brothers,16,short_term
-Jeff Buckley,15,short_term
-Patrick Watson,14,short_term
-Travis Scott,13,short_term
-Tyler Childers,12,short_term
-Colter Wall,11,short_term
-KALEO,10,short_term
-Yusuf / Cat Stevens,9,short_term
-Eagles,8,short_term
-John Mayer,7,short_term
-Pink Floyd,6,short_term
-Matt Maltese,5,short_term
-Charles Aznavour,4,short_term
-Audioslave,3,short_term
-Justin Timberlake,2,short_term
-alt-J,1,short_term
+Gregory Alan Isakov,25,short_term
+Anson Tran,24,short_term
+Drake,23,short_term
+Coldplay,22,short_term
+Kanye West,21,short_term
+Men I Trust,20,short_term
+Cesária Evora,19,short_term
+Warm Blanket,18,short_term
+Cigarettes After Sex,17,short_term
+Interpol,16,short_term
+Relaxing Jazz Piano,15,short_term
+Peach Pit,14,short_term
+Phantogram,13,short_term
+Cage The Elephant,12,short_term
+Frank Ocean,11,short_term
+The Teskey Brothers,10,short_term
+Patrick Watson,9,short_term
+Tyler Childers,8,short_term
+Outkast,7,short_term
+Colter Wall,6,short_term
+KALEO,5,short_term
+Yusuf / Cat Stevens,4,short_term
+Eagles,3,short_term
+Marcus King,2,short_term
+John Mayer,1,short_term
 Radiohead,50,medium_term
 Hozier,49,medium_term
 The Strokes,48,medium_term
-Gorillaz,47,medium_term
-Tame Impala,46,medium_term
+Tame Impala,47,medium_term
+Gorillaz,46,medium_term
 Dire Straits,45,medium_term
-The Weeknd,44,medium_term
-Cafe Music BGM channel,43,medium_term
-Daft Punk,42,medium_term
-Chris Stapleton,41,medium_term
+Chris Stapleton,44,medium_term
+The Weeknd,43,medium_term
+Cafe Music BGM channel,42,medium_term
+Daft Punk,41,medium_term
 Joe Dassin,40,medium_term
 Kanye West,39,medium_term
 Jeff Buckley,38,medium_term
 Travis Scott,37,medium_term
 Metronomy,36,medium_term
-Coldplay,35,medium_term
-Jazzy Coffee,34,medium_term
+Jazzy Coffee,35,medium_term
+Coldplay,34,medium_term
 Lil Yachty,33,medium_term
 Arctic Monkeys,32,medium_term
 Drake,31,medium_term
@@ -74,31 +74,31 @@ Emile Mosseri,29,medium_term
 Adele,28,medium_term
 Johnny Cash,27,medium_term
 AC/DC,26,medium_term
-KALEO,25,medium_term
-Red Hot Chili Peppers,24,medium_term
-"Tyler, The Creator",23,medium_term
-Kings of Leon,22,medium_term
-The Marías,21,medium_term
-Mac DeMarco,20,medium_term
+Kings of Leon,25,medium_term
+KALEO,24,medium_term
+Red Hot Chili Peppers,23,medium_term
+"Tyler, The Creator",22,medium_term
+Mac DeMarco,21,medium_term
+Medieval Lofi,20,medium_term
 Fleetwood Mac,19,medium_term
-Cigarettes After Sex,18,medium_term
-Medieval Lofi,17,medium_term
-Hans Zimmer,16,medium_term
-Mac Miller,15,medium_term
-Lana Del Rey,14,medium_term
-Sam Smith,13,medium_term
-Pink Floyd,12,medium_term
-Kendrick Lamar,11,medium_term
-Childish Gambino,10,medium_term
+The Marías,18,medium_term
+Hans Zimmer,17,medium_term
+Cigarettes After Sex,16,medium_term
+Lana Del Rey,15,medium_term
+Sam Smith,14,medium_term
+Kendrick Lamar,13,medium_term
+Mac Miller,12,medium_term
+Pink Floyd,11,medium_term
+Michael Jackson,10,medium_term
 Frank Ocean,9,medium_term
-Labrinth,8,medium_term
-David Guetta,7,medium_term
-Cozy Bedroom,6,medium_term
-Khalid,5,medium_term
-Paolo Nutini,4,medium_term
-Billy Joel,3,medium_term
-Niemen,2,medium_term
-sombr,1,medium_term
+Childish Gambino,8,medium_term
+Labrinth,7,medium_term
+David Guetta,6,medium_term
+Cozy Bedroom,5,medium_term
+Khalid,4,medium_term
+Paolo Nutini,3,medium_term
+Billy Joel,2,medium_term
+Justin Timberlake,1,medium_term
 Radiohead,50,long_term
 Hozier,49,long_term
 Mac DeMarco,48,long_term
@@ -110,14 +110,14 @@ Kanye West,43,long_term
 Drake,42,long_term
 Coldplay,41,long_term
 Lord Huron,40,long_term
-Travis Scott,39,long_term
-Gorillaz,38,long_term
+Gorillaz,39,long_term
+Travis Scott,38,long_term
 Dire Straits,37,long_term
 Daft Punk,36,long_term
 Cigarettes After Sex,35,long_term
 Beach House,34,long_term
-Mac Miller,33,long_term
-Frank Ocean,32,long_term
+Frank Ocean,33,long_term
+Mac Miller,32,long_term
 J. Cole,31,long_term
 Arctic Monkeys,30,long_term
 Lorde,29,long_term
@@ -138,8 +138,8 @@ Parcels,15,long_term
 Kendrick Lamar,14,long_term
 Laufey,13,long_term
 Rex Orange County,12,long_term
-Bruno Mars,11,long_term
-Red Hot Chili Peppers,10,long_term
+Red Hot Chili Peppers,11,long_term
+Bruno Mars,10,long_term
 The Neighbourhood,9,long_term
 Lil Yachty,8,long_term
 Surfaces,7,long_term
