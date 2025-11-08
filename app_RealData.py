@@ -47,6 +47,12 @@ st.title("🎵 Spotify Listening History Dashboard")
 st.markdown("An all-time analysis of your Spotify listening habits.")
 st.caption("Data from your exported streaming history files.")
 
+earliest = history_df["endTime"].min()
+latest = history_df["endTime"].max()
+
+st.write(f"📅 Data collection started on: {earliest}")
+st.write(f"📅 Data collection ended on: {latest}")
+
 # --- Sidebar ---
 with st.sidebar:
     st.header("Filters")
